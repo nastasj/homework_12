@@ -14,8 +14,8 @@ import static org.openqa.selenium.By.linkText;
 public class AnnotationSteps {
 
     @Step("Open the main page")
-    public void openMainPage(String url) {
-        open(url);
+    public void openMainPage() {
+        open("");
     }
 
     @Step("Search a repository {repo}")

@@ -16,7 +16,7 @@ public class AnnotationStepsTests extends TestBase {
     public void issueAnnotationStepsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         AnnotationSteps steps = new AnnotationSteps();
-        steps.openMainPage(URL);
+        steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.clickOnRepositoryLink(REPOSITORY);
         steps.openIssuesTab();

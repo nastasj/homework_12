@@ -9,7 +9,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class TestBase {
 
-    public static final String URL = "https://github.com";
     public static final String REPOSITORY = "qa-guru/qa_guru_14_10";
     public static final int ISSUE = 2;
     public static final String TITLE = "Issue for Autotest";
@@ -18,6 +17,7 @@ public class TestBase {
     static void beforeAll() {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize="1920x1080";
+        Configuration.baseUrl="https://github.com";
     }
 
     @AfterEach

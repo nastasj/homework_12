@@ -21,7 +21,7 @@ public class LambdaStepsTests extends TestBase{
     public void issueLambdaStepsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open the main page", () -> {
-            open(URL);
+            open("");
         });
         step("Search a repository " + REPOSITORY, () -> {
             $(".search-input").click();

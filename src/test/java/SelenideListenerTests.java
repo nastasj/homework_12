@@ -18,7 +18,7 @@ public class SelenideListenerTests extends TestBase {
     @DisplayName("Check the Issue title in repository using Selenide (with Listener)")
     public void issueSelenideListenerTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        open(URL);
+        open("");
         $(".search-input").click();
         $("#query-builder-test").sendKeys(REPOSITORY);
         $("#query-builder-test").submit();
